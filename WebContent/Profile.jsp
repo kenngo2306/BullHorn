@@ -25,6 +25,9 @@
 <script
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/additional-methods.min.js"></script>
 <title>Profile</title>
+<style type="text/css">
+
+</style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -52,7 +55,7 @@
 	    </div>
 	  </div>
 	</nav>
-	<h1>Profile</h1>
+	
 ${userData}
 <br>
 	<form action="/BullhornAssignment/SearchInProfile" method="GET">

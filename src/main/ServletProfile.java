@@ -60,11 +60,11 @@ public class ServletProfile extends HttpServlet {
 		
 		Bulluser user = DBBulluser.getUser(userId);
 		
-		String userData = "<div class='alert alert-info'>";
-		userData += "<p> Name: " + user.getFullName() + "</p>";
-		userData += "<p> Email: " + user.getEmail() + "</p>";
-		userData += "<p> Motto: " + user.getMotto() + "</p>";
-		userData += "<p> Join Date: " + user.getJoinDate() + "</p>";
+		String userData = "<div class='alert alert-success col-sm-8 col-sm-offset-2' >";
+		userData += "<h2>" + user.getFullName() + "</h2>";
+		userData += "<h3> Email: " + user.getEmail() + "</h3>";
+		userData += "<h3> Motto: " + user.getMotto() + "</h3>";
+		userData += "<h3> Join Date: " + user.getJoinDate() + "</h3>";
 		
 		userData += "</div>";
 		request.setAttribute("userData", userData);
