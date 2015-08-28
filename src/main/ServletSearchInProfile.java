@@ -53,37 +53,23 @@ public class ServletSearchInProfile extends HttpServlet {
 		
 		List<Post> posts = DBPost.searchPostsInProfile(userId, query);
 		System.out.println("posts size = " + posts.size());
-		String postData = "<table class='table table-bordered table-striped'>";
-		postData += "<thead>";
-		postData += "<tr>";
-		postData += "<th>";
-		postData += "User";
-		postData += "</th>";
-		postData += "<th>";
-		postData += "Content";
-		postData += "</th>";
-		postData += "<th>";
-		postData += "Date";
-		postData += "</th>";
-		postData += "</tr>";
-		postData += "</thead>";
+		String postData2 = "";
+
 		
 		for(Post post : posts)
 		{
-			postData += "<tr>";
-			postData += "<td>";
-			postData += post.getBulluser().getFullName();
-			postData += "</td>";
-			postData += "<td>";
-			postData += post.getPostContent();
-			postData += "</td>";
-			postData += "<td>";
-			postData += post.getPostDate();
-			postData += "</td>";
-			postData += "</tr>";
+			postData2 += "<div class = ' well well-large col-sm-8 col-sm-offset-2'>";
+			postData2 += "<h4>";
+			postData2 += "<a href='/BullhornAssignment/Profile?userId="+ post.getBulluser().getUserId() +"'>" +post.getBulluser().getFullName() + "</a>";
+			postData2 += "</h4>";
+			postData2 += post.getPostDate();;
+			postData2 += "<div class='alert alert-info'>";
+			postData2 += post.getPostContent();
+			postData2 += "</div>";
+			postData2 += "</div>";
 		}
 		
-		request.setAttribute("postData", postData);
+		request.setAttribute("postData", postData2);
 		request.setAttribute("userId", userId);
 		//forward it
 		getServletContext().getRequestDispatcher("/Profile.jsp").forward(request, response);

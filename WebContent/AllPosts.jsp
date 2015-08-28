@@ -52,13 +52,21 @@
 	    </div>
 	  </div>
 	</nav>
+
 	<form action="Search" method="GET">
-		<div class="form-group col-lg-1">
-			<label for="search">Search for:</label>
-			<input type="text" class="form-control" name="search"/>
-			<button type="submit" value="submit" class="btn btn-default">Search</button>
-		</div>
+		<div class="row">
+		  <div class="col-lg-3 col-lg-offset-7">
+		    <div class="input-group">
+		      <input type="text" class="form-control" name="search" placeholder="Search for...">
+		      <span class="input-group-btn">
+		        <input class="btn btn-default" type="submit" value="Search"/>
+		      </span>
+		    </div><!-- /input-group -->
+		  </div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
 	</form>
+
+	<br>
 	${postData}
 </body>
 </html>

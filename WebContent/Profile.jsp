@@ -54,15 +54,22 @@
 	</nav>
 	<h1>Profile</h1>
 ${userData}
-	<form action="SearchInProfile" method="GET">
-		<div class="form-group col-lg-1">
-		
-			<input type = "hidden" name="userId" value="${userId}"/>
-			<label for="query">Search for:</label>
-			<input type="text" class="form-control" name="query"/>
-			<button type="submit" value="submit" class="btn btn-default">Search</button>
-		</div>
+<br>
+	<form action="/BullhornAssignment/SearchInProfile" method="GET">
+		<div class="row">
+		  <div class="col-lg-3 col-lg-offset-7">
+		    <div class="input-group">
+		      <input type="hidden" name="userId" value="${userId}"/>
+		      <input type="text" class="form-control" name="query" placeholder="Search for...">
+		      <span class="input-group-btn">
+		        <input class="btn btn-default" type="submit" value="Search"/>
+		      </span>
+		    </div><!-- /input-group -->
+		  </div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
 	</form>
+
+	<br>
 ${postData}
 </body>
 </html>
