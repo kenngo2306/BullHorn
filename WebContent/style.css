@@ -1,0 +1,24 @@
+	.well
+	{
+		background-color: rgba(255,255,255,0.4);
+		color: black;
+	}
+	a
+	{
+		color: black;
+	}
+	body
+	{
+		background-image: url(img/background.jpg);
+   		background-repeat: repeat-y;
+   		background-size:cover;
+		color: black;
+	}
+	.title
+	{
+		background-color: rgba(255,255,255,0.4)
+	}
+	.alert
+	{
+		background-color: rgba(255,255,255,0.6)
+	}

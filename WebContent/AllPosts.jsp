@@ -24,6 +24,7 @@
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/additional-methods.js"></script>
 <script
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/additional-methods.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 <title>All Posts</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
 	      <ul class="nav navbar-nav">
 	      	<li><a href="AllPosts">All Posts</a></li>
 	      	<li>
-	      		<a href="${param.userId == null ? '/BullhornAssignment/LoginForm.jsp' : '/BullhornAssignment/PostForm.jsp'}">Make a Post</a></li>
+	      		<a href="/BullhornAssignment/PostForm.jsp">Make a Post</a></li>
     	    <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${username}<span class="caret"></span></a>
 		          <ul class="dropdown-menu">

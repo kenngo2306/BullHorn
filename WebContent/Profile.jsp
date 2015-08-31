@@ -25,11 +25,9 @@
 <script
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/additional-methods.min.js"></script>
 <title>Profile</title>
-<style type="text/css">
-
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body background="background.png">
 <nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">

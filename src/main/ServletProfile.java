@@ -60,7 +60,7 @@ public class ServletProfile extends HttpServlet {
 		
 		Bulluser user = DBBulluser.getUser(userId);
 		
-		String userData = "<div class='alert alert-success col-sm-8 col-sm-offset-2' >";
+		String userData = "<div class=' title col-sm-8 col-sm-offset-2' >";
 		userData += "<h2>" + user.getFullName() + "</h2>";
 		userData += "<h3> Email: " + user.getEmail() + "</h3>";
 		userData += "<h3> Motto: " + user.getMotto() + "</h3>";
@@ -81,7 +81,7 @@ public class ServletProfile extends HttpServlet {
 			postData2 += "<a href='/BullhornAssignment/Profile?userId="+ post.getBulluser().getUserId() +"'>" +post.getBulluser().getFullName() + "</a>";
 			postData2 += "</h4>";
 			postData2 += post.getPostDate();;
-			postData2 += "<div class='alert alert-info'>";
+			postData2 += "<div class='alert'>";
 			postData2 += post.getPostContent();
 			postData2 += "</div>";
 			postData2 += "</div>";

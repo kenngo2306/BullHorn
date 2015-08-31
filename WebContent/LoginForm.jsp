@@ -25,7 +25,7 @@
 <script
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/additional-methods.min.js"></script>
 <title>Login</title>
-
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
